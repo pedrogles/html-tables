@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Complexas</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        table{
+            width: 20em;
+            border: solid 0.1em black;
+        }
+        th{
+            font-size: 0.7em;
+        }
+    </style>
+</head>
+    <body>
+        <h1>Tabelas Complexas</h1>
+        <table>
+            <caption>
+                <h2>Tabela de Pessoas</h2>
+            </caption>
+            <colgroup>
+                <col>
+                <col style="background-color: blue;">
+                <col style="background-color: darkcyan;">
+                <col style="background-color: gold;">
+                <col style="background-color: pink;">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Nome</th>
+                    <th>Idade</th>
+                    <th>Bairro</th>
+                    <th>Altura</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>1</th>
+                    <td>Marcos</td>
+                    <td>23</td>
+                    <td>Mandacaru</td>
+                    <td>1.54</td>
+                </tr>
+                <tr>
+                    <th>2</th>
+                    <td>Melissa</td>
+                    <td>35</td>
+                    <td>Manaira</td>
+                    <td>1.67</td>
+                </tr>
+                <tr>
+                    <th>3</th>
+                    <td>Marcela</td>
+                    <td>12</td>
+                    <td>São José</td>
+                    <td>1.84</td>
+                </tr>
+                <tr>
+                    <th>4</tj>
+                    <td>Antonio</td>
+                    <td>54</td>
+                    <td>Ipês</td>
+                    <td>2.10</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td rowspan="5" colspan="5">Todos são calvos.</td>
+                </tr>
+            </tfoot>
+        </table>
+        <table>
+            <caption>
+                <h2>Tabela de Vitoria x Derrota</h2>
+            </caption>
+            <colgroup>
+                <col>
+                <col span="2" style="background-color: rgb(111, 111, 197);">
+                <col span="2" style="background-color: rgb(145, 172, 114);">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th colspan="2" scope="colgroup">Flamengo</th>
+                    <th colspan="2" scope="colgroup">Vasco</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td scope="col">Vitória</td>
+                    <td scope="col">Derrota</td>
+                    <td scope="col">Vitória</td>
+                    <td scope="col">Derrota</td>
+                </tr>
+                <tr>
+                    <th scope="row">Primeiro Jogo</th>
+                    <td>x</td>
+                    <td></td>
+                    <td></td>
+                    <td>x</td>
+                </tr>
+                <tr>
+                    <th scope="row">Segundo Jogo</th>
+                    <td></td>
+                    <td>x</td>
+                    <td>x</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">Terceiro Jogo</th>
+                    <td>x</td>
+                    <td></td>
+                    <td></td>
+                    <td>x</td>
+                </tr>
+                <tr>
+                    <th scope="row">Final</th>
+                    <td>x</td>
+                    <td></td>
+                    <td></td>
+                    <td>x</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td scope="row" colspan="5">Resultado: Flamengo ganhou daquele modelo</td>
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+</html>
